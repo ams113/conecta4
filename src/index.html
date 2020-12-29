@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Starter Kit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+</head>
+<body>
+   <div id="root">Hello World!</div>
+   <script src="./index.js"></script>
+
+   <div class="container">
+    <div id="panel" class="jumbotron">
+        <h1>Conecta 4</h1>
+        <p class="lead">Introduce el nombre de cada jugador y las columas del tablero (entre 5 y 15)</p>
+        <hr class="my-3">
+
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <i class="fas fa-circle" style="color: #cc0000;"></i></i> <input id="player1" class="form-control me-2" type="text" placeholder="Player 1">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <i class="fas fa-circle" style="color: #0000cc;"></i> <input id="player2" class="form-control me-2" type="text" placeholder="Player 2">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <input id="cols" class="form-control me-2" type="text" placeholder="Columns">
+            </div>
+          </form>
+
+        <a id="start" class="btn btn-primary btn-lg" href="#" role="button">Start</a>
+    </div>
+
+    <div id="game">
+        <class class="row">
+            <div class="col">
+                <div id="message" class="alert alert-info" role="alert">
+                  <strong id="playerName"></strong> es tú turno, haga click en la columna para tirar ficha <span id="playerChip" class="badge badge-pill"></span>
+                </div>
+                <div id="winner" class="alert alert-success" role="alert">
+                  <strong id="playerWin"></strong> es el ganador del juego!!
+                  <a id="restart" class="btn btn-primary btn-sm" href="#" role="button">Restart</a>
+                </div>
+            </div>
+        </class>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <table id="tablero" class="table text-center" style="max-width: 540px;">
+                    <tbody id="tbody">
+                       		
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <div class="row" style="margin-top: 10px">
+            <div class="col d-flex justify-content-center">
+                <h1 id="textWin" class="text-hide"></h1>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+</body>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8d6c6515a9.js"></script>
+<script src="index.js"></script>
+</html>
